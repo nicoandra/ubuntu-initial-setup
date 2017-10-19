@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update; sudo apt-get upgrade;
-sudo apt-get install aptitude build-essentials curl synaptic git ;
+sudo apt-get install aptitude build-essential curl synaptic git ;
 
 ## Terminator
 sudo add-apt-repository ppa:gnome-terminator;
