@@ -19,7 +19,7 @@ sudo add-apt-repository ppa:webupd8team/atom;
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
 ## Mixx DJ software as per https://www.mixxx.org/manual/latest/chapters/installation.html#installation-on-gnu-linux
-sudo apt-add-repository ppa:mixxx/mixxx
+## sudo apt-add-repository ppa:mixxx/mixxx
 
 
 ## Cinelerra CV; great video editor
