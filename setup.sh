@@ -33,14 +33,19 @@ sudo add-apt-repository ppa:me-davidsansome/clementine
 sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
 
 
-sudo apt-get install terminator google-chrome-stable \
-atom htop mixxx gnome-tweak-tool arc-theme numix-gtk-theme \
-ubuntu-restricted-extras gimp open-ssh virtualbox knocker \
-cinelerra-cv clementine
-;
+## Laptop tools for performance and battery life as per http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#installation
+
+sudo add-apt-repository ppa:linrunner/tlp
+
+sudo aptitude install terminator google-chrome-stable \
+atom htop mixxx gnome-tweak-tool \
+ubuntu-restricted-extras gimp ssh virtualbox knocker \
+cinelerra-cv clementine tlp acpi-call-dkms gtkpod
 
 ## Wallpaper changer
 git clone https://github.com/neffo/bing-wallpaper-gnome-extension.git $HOME/.local/share/gnome-shell/extensions/BingWallpaper@ineffable-gmail.com
+
+
 
 
 
