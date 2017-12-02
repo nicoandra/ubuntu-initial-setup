@@ -1,5 +1,9 @@
 #!/bin/bash
 
+## Move buttons to the left
+gsettings set org.gnome.desktop.wm.preferences button-layout 'close,maximize,minimize:'
+
+
 sudo apt-get update; sudo apt-get upgrade;
 sudo apt-get install aptitude build-essential curl synaptic git ;
 
@@ -57,6 +61,9 @@ sudo usermod -aG users $ME
 ## Wallpaper changer
 git clone https://github.com/neffo/bing-wallpaper-gnome-extension.git $HOME/.local/share/gnome-shell/extensions/BingWallpaper@ineffable-gmail.com
 
+
+## Platformio, use USB devices
+sudo usermod -aG dialout $ME
 
 
 ### Make it so GDM does not start pulseaudio as per https://www.debuntu.org/how-to-disable-pulseaudio-and-sound-in-gdm/ (for bluetooth pairing)
